@@ -29,20 +29,6 @@ Form-Biodata/
 └── bio.php
 ```
 
-## Cara Menjalankan
-1. Download atau clone repository ini.
-2. Simpan folder project ke dalam direktori `htdocs`.
-3. Jalankan Apache melalui XAMPP.
-4. Buka browser.
-5. Masukkan alamat berikut:
-
-```text
-http://localhost/Form-Biodata/
-```
-
-6. Isi form biodata siswa.
-7. Klik tombol **Kirim** untuk menampilkan data.
-
 ## Cara Kerja
 1. Pengguna mengisi form biodata pada halaman `index.html`.
 2. Data dikirim menggunakan method `GET`.
