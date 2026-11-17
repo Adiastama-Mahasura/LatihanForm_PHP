@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata</title>
+</head>
+
+<body>
+
+    <form action="bio.php" method="get">
+        <table>
+
+            <tr>
+                <td><label for="nis">NIS</label></td>
+                <td>
+                    <input type="text" name="nis" placeholder="Masukkan NIS" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="nama">Nama Siswa</label></td>
+                <td>
+                    <input type="text" name="nama" placeholder="Masukkan Nama Siswa" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="tgl_lahir">Tanggal Lahir</label></td>
+                <td>
+                    <input type="date" name="tgl_lahir" placeholder="Masukkan Tanggal Lahir">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Jenis Kelamin</label></td>
+                <td><input type="radio" name="jk" value="Laki-laki" checked>Laki-laki</td>
+            </tr>
+             <tr>
+                <td></td>
+                <td><input type="radio" name="jk" value="Perempuan">Perempuan</td>
+            </tr> 
+            <tr>
+                <td><label>Kompetensi Keahlian</label></td>
+                <td><select name ="kk">
+                    <option> Pilih Kompetensi Keahlian</option>
+                    <option value ="RPL">RPL</option>
+                    <option value ="TB">TB</option>
+                    <option value ="TEI">TEI</option>
+                    <option value ="TKJ">TKJ</option>
+                    <option value ="TKR">TKR</option>
+                    <option value ="TP">TP</option>
+                    <option value ="TPSB">TPSB</option>
+
+                </select></td> 
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>
+                    <input type="email" name="email" placeholder="Masukkan Email">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="tinggi">Tinggi Badan</label></td>
+                <td>
+                    <input type="number" name="tinggi" placeholder="Masukkan Tinggi Badan (kg)">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ekskul">Ekstrakulikuler</label></td>
+                <td>
+                    <input type="checkbox" name="ekskul[]" value="Pramuka">Pramuka
+                    <input type="checkbox" name="ekskul[]" value="Band">Band
+                    <input type="checkbox" name="ekskul[]" value="Paskibra">Paskibra
+                    <input type="checkbox" name="ekskul[]" value="Badminton">Badminton
+                    <input type="checkbox" name="ekskul[]" value="PMR">PMR
+                </td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat</label></td>
+                <td>
+                    <textarea id = "alamat" name = "alamat" placeholder="Masukan Alamat" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+
+        </table>
+
+        <input type="submit" name="kirim" value="Kirim">
+
+    </form>
+
+</body>
+</html>
